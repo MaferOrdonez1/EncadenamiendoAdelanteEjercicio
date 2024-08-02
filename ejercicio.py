@@ -8,10 +8,8 @@ class Regla:
             return self.conclusion
         return None
 
-# Base de hechos inicial
 base_de_hechos = {"el cliente ha pagado su mensualidad"}
 
-# Definición de reglas
 reglas = [
     Regla(["el cliente no ha pagado su mensualidad"], "el cliente no puede ingresar al establecimiento del gimnasio"),
     Regla(["el cliente ha pagado su mensualidad"], "el cliente puede ingresar al establecimiento del gimnasio"),
